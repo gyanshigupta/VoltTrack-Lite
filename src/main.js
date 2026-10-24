@@ -36,9 +36,8 @@ function analyzeReadings(input) {
   }
 
   const consumption = current - previous;
-  // Demonstration rule: flag monthly use above 500 kWh, or a rise over 200 kWh
-  // compared with a simple 100 kWh reference month.
-  const unusuallyHigh = consumption > 500 || consumption - 100 > 200;
+  // Demonstration rule: flag monthly consumption above 300 kWh.
+  const unusuallyHigh = consumption > 300;
   const score = unusuallyHigh
     ? Math.min(100, Math.round(50 + Math.max(0, consumption - 300) / 10))
     : Math.min(49, Math.round(consumption / 10));
