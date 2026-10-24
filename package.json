@@ -1,0 +1,21 @@
+{
+  "name": "volttrack-lite",
+  "version": "1.0.0",
+  "description": "A simple Electron electricity meter consumption monitoring demonstration.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "electricity",
+    "meter"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.4.11"
+  },
+  "allowScripts": {
+    "electron@33.4.11": true
+  }
+}

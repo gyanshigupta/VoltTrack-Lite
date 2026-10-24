@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #17253b; background: #f4f7fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 50% -15%, #e3edff 0, transparent 48%), #f4f7fb; }
+.app-shell { width: min(700px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 22px; }
+.topbar { display: flex; align-items: center; gap: 12px; }
+.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 13px; background: #2365e8; color: white; font: 800 22px Manrope, sans-serif; box-shadow: 0 5px 12px #2365e833; }
+.eyebrow { color: #718198; font-weight: 700; font-size: 10px; letter-spacing: 1.3px; margin: 0 0 4px; }
+h1 { font: 800 17px Manrope, sans-serif; margin: 0; letter-spacing: -.4px; } h1 span { color: #718198; font-weight: 600; }
+.demo-badge { margin-left: auto; color: #62748c; background: #e9eef6; border: 1px solid #dfe6f0; padding: 7px 10px; border-radius: 20px; font-size: 9px; font-weight: 700; letter-spacing: .8px; }
+.demo-badge span { display: inline-block; width: 6px; height: 6px; background: #42b985; border-radius: 50%; margin: 0 5px 1px 0; }
+.intro { margin: 42px 0 24px; } .intro .eyebrow { color: #2365e8; }
+h2 { font: 700 29px Manrope, sans-serif; letter-spacing: -.8px; margin: 7px 0 5px; } .intro > p:last-child { color: #728097; font-size: 13px; margin: 0; line-height: 1.6; max-width: 510px; }
+.panel { background: #fff; border: 1px solid #e8edf4; border-radius: 14px; padding: 23px 25px 18px; box-shadow: 0 8px 24px #1d35570a; margin-bottom: 16px; }
+.section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 19px; }
+.step-number { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px; color: #2365e8; background: #edf3ff; font-size: 11px; font-weight: 700; }
+h3 { font: 700 14px Manrope, sans-serif; margin: 0 0 3px; } .section-heading p { color: #8290a3; font-size: 11px; margin: 0; }
+.field { display: block; color: #34435a; font-size: 11px; font-weight: 600; margin-bottom: 15px; } .required { color: #ed765e; margin-left: 3px; }.unit { color: #8b98a9; font-size: 10px; font-weight: 500; margin-left: 4px; }
+input { display: block; width: 100%; height: 42px; margin-top: 7px; border: 1px solid #dce4ef; border-radius: 7px; outline: 0; padding: 0 12px; color: #263851; background: white; font: 12px 'DM Sans', sans-serif; transition: border-color .15s, box-shadow .15s; }
+input::placeholder { color: #a9b4c2; } input:focus { border-color: #6b97ed; box-shadow: 0 0 0 3px #2365e815; }
+.reading-grid { display: grid; grid-template-columns: 1fr 24px 1fr; align-items: center; gap: 12px; } .reading-arrow { color: #a3afbe; font-size: 16px; text-align: center; margin-top: -13px; }
+.primary-button { width: 100%; height: 43px; border: 0; border-radius: 7px; background: #2365e8; color: white; font: 600 12px 'DM Sans', sans-serif; cursor: pointer; box-shadow: 0 4px 9px #2365e825; transition: background .15s, transform .15s; } .primary-button:hover { background: #1857d4; transform: translateY(-1px); }.primary-button span { margin-left: 5px; font-size: 15px; vertical-align: -1px; }
+.privacy-note { text-align: center; color: #8996a7; font-size: 10px; margin: 13px 0 0; }.privacy-note span { margin-right: 4px; color: #5c9a7c; }
+.form-error { color: #b44135; background: #fff1ef; border-radius: 6px; padding: 9px 11px; font-size: 11px; margin: 0 0 12px; }
+[hidden] { display: none !important; }
+.results-panel { padding-bottom: 20px; }.result-banner { display: flex; align-items: flex-start; gap: 12px; border-radius: 9px; padding: 14px; margin-bottom: 13px; }.result-banner.normal { background: #eff9f4; border: 1px solid #d7efe1; }.result-banner.investigate { background: #fff6eb; border: 1px solid #f5e3c8; }
+.result-icon { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; font-weight: 700; flex: 0 0 26px; }.normal .result-icon { color: #188454; background: #d8f1e3; }.investigate .result-icon { color: #c47a20; background: #ffebcd; }
+.result-label { font-size: 9px; font-weight: 700; letter-spacing: .9px; margin: 0 0 3px; color: #76859a; }.result-banner h4 { font: 700 13px Manrope, sans-serif; margin: 0 0 3px; }.result-banner p:last-child { margin: 0; color: #6e7d90; font-size: 11px; line-height: 1.5; }
+.metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }.metric { border: 1px solid #e8edf4; background: #fbfcfe; border-radius: 8px; padding: 13px 14px; }.metric > span { display: block; color: #8793a4; font-size: 9px; font-weight: 700; letter-spacing: .7px; }.metric > strong { display: block; font: 700 22px Manrope, sans-serif; margin: 5px 0 1px; }.metric > small { color: #8491a2; font-size: 10px; }.risk-metric strong { color: #2365e8; }.risk-metric strong small { font: 500 11px 'DM Sans', sans-serif; color: #8995a4; }
+.rule-note { display: flex; gap: 9px; align-items: flex-start; padding: 11px 12px; background: #f5f8fc; border-radius: 7px; margin-top: 12px; color: #7c8a9c; }.rule-note > span { color: #6886b9; font-size: 13px; }.rule-note p { font-size: 10px; line-height: 1.55; margin: 0; }.rule-note strong { color: #4c5c71; }
+.result-actions { display: flex; align-items: center; gap: 12px; margin-top: 13px; }.secondary-button { border: 1px solid #dce4ef; border-radius: 6px; padding: 9px 12px; background: white; color: #3c506b; font: 600 10px 'DM Sans', sans-serif; cursor: pointer; }.secondary-button:hover { background: #f6f8fb; }.secondary-button span { color: #2365e8; margin-left: 4px; font-size: 13px; }.result-actions > span { font-size: 10px; color: #64768d; }
+footer { text-align: center; color: #9aa5b3; font-size: 9px; padding-top: 5px; } footer span { margin: 0 4px; }
+@media (max-width: 520px) { .app-shell { width: calc(100% - 28px); padding-top: 22px; } .intro { margin-top: 34px; } h2 { font-size: 25px; } .panel { padding: 19px 16px 16px; } .reading-grid { gap: 7px; grid-template-columns: 1fr 14px 1fr; } .demo-badge { font-size: 8px; padding: 6px 8px; } }
